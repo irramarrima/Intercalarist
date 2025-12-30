@@ -1,6 +1,11 @@
 # Intercalarist
 A free tool for creating custom solar calendars.
 
+<p align="center">
+<img width="40%" alt="Sample 1" src="https://github.com/user-attachments/assets/d2ba6b26-6db9-4815-8fd7-23d678bc9078"/>
+<img width="40%" alt="Sample 2" src="https://github.com/user-attachments/assets/9ad4aa1c-2e53-4dd8-a658-d65f92e192a8" />
+</p>
+
 WHAT CAN I DO WITH THIS TOOL?
 
 - Create your own solar calendars, distributing the days of the year (365 plus a leap day) in whichever
