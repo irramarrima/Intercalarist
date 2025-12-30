@@ -553,57 +553,6 @@ Module Display
         foundControls(0).Dispose()
     End Sub
 
-    'Public Sub ChangeControlName(ByVal oldName As String, ByVal newName As String)
-    'This sub is ONLY called by controls WITHOUT handlers!
-    'Dim foundControls() As Control = MainViewForm.MonthsPanel.Controls.Find(oldName, False)
-    'Dim targetControl As Control = foundControls(0)
-
-    '   targetControl.Name = newName
-    '    targetControl.Tag = Val(targetControl.Tag) - 1
-    'End Sub
-
-    'Public Sub ChangeRemoveName(ByVal oldName As String, ByVal newName As String)
-    'This is because it's a button and the handler has to be removed and remade
-
-    'Dim foundControls() As Control = MainViewForm.MonthsPanel.Controls.Find(oldName, False)
-    'Dim targetControl As Button = foundControls(0)
-
-    'RemoveHandler() targetControl.Click, AddressOf DynamicRemoveMonth_Click
-    '    targetControl.Name = newName
-    '    targetControl.Tag = Val(targetControl.Tag) - 1
-    '
-    '   AddHandler() targetControl.Click, AddressOf DynamicRemoveMonth_Click
-    '  End Sub
-
-    'Public Sub ChangeUpDownName(ByVal oldName As String, ByVal newName As String)
-    'This is because it's a numericupdown and the handlers have to be removed and remade
-
-    'Dim foundControls() As Control = MainViewForm.MonthsPanel.Controls.Find(oldName, False)
-    'Dim targetControl As NumericUpDown = foundControls(0)
-
-    'RemoveHandler() targetControl.ValueChanged, AddressOf DynamicDayValue_Changed
-    'RemoveHandler() targetControl.GotFocus, AddressOf DynamicUpDown_GotFocus
-    'RemoveHandler() targetControl.Click, AddressOf DynamicUpDown_GotFocus
-    '   targetControl.Name = newName
-    '  targetControl.Tag = Val(targetControl.Tag) - 1
-
-    'AddHandler() targetControl.ValueChanged, AddressOf DynamicDayValue_Changed
-    'AddHandler() targetControl.GotFocus, AddressOf DynamicUpDown_GotFocus
-    'AddHandler() targetControl.Click, AddressOf DynamicUpDown_GotFocus
-    'End Sub
-
-    'Public Sub UpdateLabelNumber(ByVal labelName As String)
-    'Dim foundControls() As Control = MainViewForm.MonthsPanel.Controls.Find(labelName, False)
-    'Dim targetControl As Control = foundControls(0)
-    '   targetControl.Text = targetControl.Tag.ToString()
-    'End Sub
-
-    'Public Sub UpdateControlProperties(ByVal labelName As String)
-    'Dim foundControls() As Control = MainViewForm.MonthsPanel.Controls.Find(labelName, False)
-    'Dim targetControl As Control = foundControls(0)
-    '   targetControl.Top -= ButtonAddSpace
-    'End Sub
-
     Public Sub DynamicMoveMonthDown(sender As Object, e As EventArgs)
         Dim clickedDay As Button = DirectCast(sender, Button)
         Dim whichMoveDown As Integer = clickedDay.Name.Substring("MonthMoveDown".Length, clickedDay.Name.Length - "MonthMoveDown".Length)
@@ -1090,4 +1039,5 @@ Module Display
     End Sub
 
 End Module
+
 
