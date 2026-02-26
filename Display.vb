@@ -591,8 +591,8 @@ Module Display
             Dim newDays As New NumericUpDown With {
             .Name = "MonthDays" + TotalMonths.ToString(),
             .Minimum = 1,
-            .Value = passedDays,
             .Maximum = 365,
+            .Value = passedDays,
             .Tag = TotalMonths,
             .Top = MainViewForm.ButtonAddMonth.Top,
             .Left = MainViewForm.LabelDays.Left,
@@ -1039,5 +1039,6 @@ Module Display
     End Sub
 
 End Module
+
 
 
