@@ -20,10 +20,11 @@ Module Miscelaneous
     'This module contains various global variables.
 
     Public Const MainTitle As String = "Intercalarist"
-    Public Const AppCurrentVersion As String = "1.3"
+    Public Const AppCurrentVersion As String = "1.3.2"
 
     Public Const AppFilesExtension As String = "itct"
 
     Public Const ConfigFile As String = "Intercalarist.ini"
 
 End Module
+
